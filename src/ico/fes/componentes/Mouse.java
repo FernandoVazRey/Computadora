@@ -13,13 +13,15 @@ public class Mouse {
  
     private String marca;
     private String modelo;
+    private String tipo;
 
     public Mouse() {
     }
 
-    public Mouse(String marca, String modelo) {
+    public Mouse(String marca, String modelo, String tipo) {
         this.marca = marca;
         this.modelo = modelo;
+        this.tipo = tipo;
     }
 
     public String getMarca() {
@@ -38,10 +40,20 @@ public class Mouse {
         this.modelo = modelo;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public String toString() {
-        return "Mouse{" + "marca=" + marca + ", modelo=" + modelo + '}';
+        return "Mouse{" + "marca=" + marca + ", modelo=" + modelo + ", tipo=" + tipo + '}';
     }
     
+    
+
     
 }

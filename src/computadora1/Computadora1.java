@@ -10,6 +10,7 @@ import ico.fes.componentes.Computadora;
 import ico.fes.componentes.Monitor;
 import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Teclado;
+import java.awt.BorderLayout;
 
 /**
  *
@@ -22,10 +23,18 @@ public class Computadora1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    Computadora pc1=new Computadora("Acer", "Aspire");
+    Computadora pc1=new Computadora("Acer", " Aspire");
+    Monitor mt1=new Monitor("PnP ", "Generico ", 15);
+    Mouse mo1=new Mouse("Microsoft ", "Basic Optical", " alambrico");
+    Teclado tcl=new Teclado("Dell", " SK-9811 ", 100, 10);
+    CPU cpu1=new CPU("Intel", " Core I5 ", 2);
         
-        System.out.println(pc1.getMarca());
-        System.out.println(pc1.getModelo());
+        System.out.println(pc1.getMarca()+ pc1.getModelo());
+        System.out.println(mt1.getMarca()+ mt1.getModelo()+ mt1.getPulgadas()+ " pulgadas");
+        System.out.println(mo1.getMarca()+ mo1.getModelo()+ mo1.getTipo());
+        System.out.println(tcl.getMarca()+ tcl.getModelo()+ tcl.getNumeroDeTeclas()+ " " + tcl.getMultimedia());
+        System.out.println(cpu1.getMarca()+ cpu1.getModelo()+ cpu1.getVelocidadProcesador()+ ".0Ghz");
+        
     }
     
 }
